@@ -81,6 +81,7 @@ input{
     }
 
     .btn-group .button {
+        font-family:'Cardenio Modern';
         background-color: rgb(107, 157, 208);
         border: 1px solid rgb(79, 121, 162);
         border-radius: 2px;
@@ -103,6 +104,7 @@ input{
     }
 
     .buttonReset{
+        font-family:'Cardenio Modern';
         background-color: rgb(107, 157, 208);
         border: none;
         color: white;
