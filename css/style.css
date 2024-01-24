@@ -1,0 +1,81 @@
+body{
+    background-image: url(/images/planodefundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family:'Cardenio Modern';
+    
+    color: rgb(29, 79, 130);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 30px;
+}
+
+table{
+    font-size: larger;
+    text-align: left;
+    background-color: #ffffff81;
+    border: 3px solid rgb(107, 157, 208);
+    border-radius: 10px;
+    overflow: hidden; 
+    padding: 25px;
+}
+
+input{
+    font-family:'Cardenio Modern';
+    font-size: larger;
+    background-color: #ffffff00;
+    border: 0;
+    color: rgb(79, 121, 162);
+    text-align: center;
+    
+}
+
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none;
+    }
+    input[type="number"]{
+        outline:none;
+        border-right: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-bottom: 0px;
+        
+    }
+
+    input[type=text]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=text] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+
+    input[type=text]::-webkit-inner-spin-button, 
+    input[type=text]::-webkit-outer-spin-button { 
+      -webkit-appearance: none;
+    }
+    input[type="text"]{
+        outline:none;
+        border-right: 0px;
+        border-top: 0px;
+        border-left: 0px;
+        border-bottom: 0px;
+        font-weight: bold;
+    }

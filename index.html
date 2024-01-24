@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/wingspanICON.png" type="image">
+    <title>Wingspan</title>
+</head>
+<body>
+    <font>
+        <table border="1px" cellpadding="5px" cellspacing="0">
+        <tr style="font-size: 20px;">
+            <th>Jogadores</th>
+            <th><input type="text" value="Jogador 1"
+                onfocus="javascript:(this.value=='Jogador 1'?this.value = '':null);"
+                onblur="javascript:(this.value==''?this.value = 'Jogador 1':null);" /></th>
+            <th><input type="text" value="Jogador 2"
+                onfocus="javascript:(this.value=='Jogador 2'?this.value = '':null);"
+                onblur="javascript:(this.value==''?this.value = 'Jogador 2':null);" /></th>
+        </tr>
+        <tr >
+            <td>Aves</td>
+            <td><input id="aves1" type="number" value="" onfocus="calcularJog1()"></td>
+            <td><input id="aves2" type="number" value="" onfocus="calcularJog2()"></td>
+        </tr>
+        <tr>
+            <td>Cartas bônus </td>
+            <td><input id="cartasBonus1" type="number" value="" onfocus="calcularJog1()"></td>
+            <td><input id="cartasBonus2" type="number" value="" onfocus="calcularJog2()"></td>
+        </tr>
+        <tr>
+            <td>Obj. final de rodada</td>
+            <td><input id="objFinal1" type="number" value="" onfocus="calcularJog1()"></td>
+            <td><input id="objFinal2" type="number" value="" onfocus="calcularJog2()"></td>
+        </tr>	
+        <tr>
+            <td>Ovos</td>
+            <td><input id="ovos1" type="number" value="" onfocus="calcularJog1()"></td>
+            <td><input id="ovos2" type="number" value="" onfocus="calcularJog2()"></td>
+        </tr>
+        <tr>
+            <td>Comidas nas cartas</td>
+            <td><input id="comidas1" type="number" value="" onfocus="calcularJog1()"></td>
+            <td><input id="comidas2" type="number" value="" onfocus="calcularJog2()"></td>
+        </tr>	
+        <tr>
+            <td>Cartas embaixo</td>
+            <td><input id="cartasEmbaixo1" type="number" value="" onfocus="calcularJog1()"></td>
+            <td><input id="cartasEmbaixo2" type="number" value="" onfocus="calcularJog2()"></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td><input id="total1" type="number" value="" onfocus="calcularJog1()"></td>
+            <td><input id="total2" type="number" value="" onfocus="calcularJog2()"></td>
+        </tr>	
+        </table>
+    </font>
+
+    <script src="./js/ranking.js"></script>
+</body>
+</html>
