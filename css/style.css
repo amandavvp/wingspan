@@ -21,7 +21,25 @@ table{
     border: 3px solid rgb(107, 157, 208);
     border-radius: 10px;
     overflow: hidden; 
+    
+}
+
+.tabelaBorda{ 
+    background-color: #ffffff81;
+    border: 3px solid rgb(107, 157, 208);
+    border-radius: 10px;
     padding: 25px;
+
+}
+/* 
+.configuracoesJogo{
+    background-color: #ffffff00;
+    border: none;
+}
+*/
+#expansao{
+    width: 76px;
+    text-align: left;
 }
 
 input{

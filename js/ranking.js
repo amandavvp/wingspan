@@ -17,3 +17,7 @@ function calcularJog2(){
     var valor6 = parseInt(document.getElementById('cartasEmbaixo2').value, 10);
     document.getElementById('total2').value = valor1 + valor2 + valor3 + valor4 + valor5 + valor6;
 }
+
+function soulinda(){
+    document.getElementById('total2').value = 55555
+}

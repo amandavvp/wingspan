@@ -9,6 +9,7 @@
 </head>
 <body>
     <font>
+        <div class="tabelaBorda">
         <table border="1px" cellpadding="5px" cellspacing="0">
         <tr style="font-size: 20px;">
             <th>Jogadores</th>
@@ -21,61 +22,66 @@
         </tr>
         <tr >
             <td>Aves</td>
-            <td><input id="aves1" type="number" value="" onfocus="calcularJog1()"></td>
-            <td><input id="aves2" type="number" value="" onfocus="calcularJog2()"></td>
+            <td><input id="aves1" type="number" value="0" onfocus="calcularJog1()"></td>
+            <td><input id="aves2" type="number" value="0" onfocus="calcularJog2()"></td>
         </tr>
         <tr>
             <td>Cartas bônus </td>
-            <td><input id="cartasBonus1" type="number" value="" onfocus="calcularJog1()"></td>
-            <td><input id="cartasBonus2" type="number" value="" onfocus="calcularJog2()"></td>
+            <td><input id="cartasBonus1" type="number" value="0" onfocus="calcularJog1()"></td>
+            <td><input id="cartasBonus2" type="number" value="0" onfocus="calcularJog2()"></td>
         </tr>
         <tr>
             <td>Obj. final de rodada</td>
-            <td><input id="objFinal1" type="number" value="" onfocus="calcularJog1()"></td>
-            <td><input id="objFinal2" type="number" value="" onfocus="calcularJog2()"></td>
+            <td><input id="objFinal1" type="number" value="0" onfocus="calcularJog1()"></td>
+            <td><input id="objFinal2" type="number" value="0" onfocus="calcularJog2()"></td>
         </tr>	
         <tr>
             <td>Ovos</td>
-            <td><input id="ovos1" type="number" value="" onfocus="calcularJog1()"></td>
-            <td><input id="ovos2" type="number" value="" onfocus="calcularJog2()"></td>
+            <td><input id="ovos1" type="number" value="0" onfocus="calcularJog1()"></td>
+            <td><input id="ovos2" type="number" value="0" onfocus="calcularJog2()"></td>
         </tr>
         <tr>
             <td>Comidas nas cartas</td>
-            <td><input id="comidas1" type="number" value="" onfocus="calcularJog1()"></td>
-            <td><input id="comidas2" type="number" value="" onfocus="calcularJog2()"></td>
+            <td><input id="comidas1" type="number" value="0" onfocus="calcularJog1()"></td>
+            <td><input id="comidas2" type="number" value="0" onfocus="calcularJog2()"></td>
         </tr>	
         <tr>
             <td>Cartas embaixo</td>
-            <td><input id="cartasEmbaixo1" type="number" value="" onfocus="calcularJog1()"></td>
-            <td><input id="cartasEmbaixo2" type="number" value="" onfocus="calcularJog2()"></td>
+            <td><input id="cartasEmbaixo1" type="number" value="0" onfocus="calcularJog1()"></td>
+            <td><input id="cartasEmbaixo2" type="number" value="0" onfocus="calcularJog2()"></td>
         </tr>
         <tr>
             <td>Total</td>
-            <td><input id="total1" type="number" value="" onfocus="calcularJog1()"></td>
-            <td><input id="total2" type="number" value="" onfocus="calcularJog2()"></td>   
+            <td><input id="total1" disabled="true" type="number" value=""></td>
+            <td><input id="total2" disabled="true" type="number" value=""></td>   
         </tr>	
-        
+    </table>
+    
+    <table  class="configuracoesJogo" border="1px">
         <tr>
+            <td><input type="checkbox" onchange="soulinda()" id="expansao" name="expansao">
+            <label for="expansaoA">Modo dueto (Ásia)</label></td>
             <td><input type="checkbox" id="expansao" name="expansao">
-            <label for="expansaoA">Ásia:</label></td>
-            <td><input type="checkbox" id="expansao" name="expansao">
-            <label for="expansaoO">Oceania:</label></td>
+            <label for="expansaoO">Néctar (Oceania)</label></td>
+            <td align="center"><button class="buttonReset" onclick="location.reload()">REINICIAR</button></td>
+        </tr>
+        <tr>
+            <td></td>
             <td>
                 <div class="btn-group">
                     <button class="button">2</button>
                     <button class="button">3</button>
                     <button class="button">4</button>
-                    <button class="button">5</button> &nbsp jogadores
-                  </div>
-                
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button">7</button> &nbsp jogadores
+                </div>
             </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td align="center"><button class="buttonReset">REINICIAR</button></td>
-            <td></td>
+            <td></td>            
         </tr>
     </table>
+
+    </div>
     </font>
 
     <script src="./js/ranking.js"></script>
